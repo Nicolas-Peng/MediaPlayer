@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.LZP.mediaplayer.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="354dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/past"
+            android:layout_width="52dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/lastsong" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="52dp"
+            android:layout_height="46dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/playmusic" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="52dp"
+            android:layout_height="46dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/nextsong" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CC6600"
+        android:text="退出" />
+
+</LinearLayout>
